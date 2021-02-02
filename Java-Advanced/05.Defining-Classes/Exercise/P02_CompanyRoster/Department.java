@@ -3,13 +3,12 @@ package Exercise.P02_CompanyRoster;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Department {
     private String name;
     private List<Employee> employeeList;
 
-    public Department(Employee employee) {
+    public Department() {
         this.employeeList = new ArrayList<>();
     }
 
@@ -22,10 +21,11 @@ public class Department {
     }
 
     public double getAverageSalary() {
-        double averageSalary = 0.0;
+        double avgSalary = 0.0;
         for (Employee employee : this.employeeList) {
-            averageSalary += employee.getSalary();
+            avgSalary += employee.getSalary();
         }
-        return averageSalary / this.employeeList.size();
+
+        return avgSalary / this.employeeList.size();
     }
 }
