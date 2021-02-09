@@ -42,7 +42,7 @@ public class Main {
 
                         double interest = vault.get(id).getInterest(years);
                         output = String.format("%.2f", interest);
-                    }else {
+                    } else {
                         output = "Account does not exist";
                         break;
                     }
