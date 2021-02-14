@@ -41,8 +41,8 @@ public class P05_MaximumSumOfTwoByTwoMatrices {
 
     private static void printMatrix(int[][] bestMatrix, int maxValue) {
         for (int[] matrix : bestMatrix) {
-            for (int c = 0; c < matrix.length; c++) {
-                System.out.print(matrix[c] + " ");
+            for (int i : matrix) {
+                System.out.print(i + " ");
             }
             System.out.println();
         }
