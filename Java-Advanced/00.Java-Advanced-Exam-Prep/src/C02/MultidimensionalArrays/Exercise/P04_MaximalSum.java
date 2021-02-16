@@ -29,14 +29,13 @@ public class P04_MaximalSum {
     }
 
     private static void printMatrix(int[] bestVector, int[][] matrix) {
-        StringBuilder sb = new StringBuilder();
+
         for (int r = bestVector[0]; r < bestVector[0] + 3; r++) {
-            for (int c = bestVector[0]; c < bestVector[1] + 3; c++) {
-                sb.append(matrix[r][c]).append(" ");
+            for (int c = bestVector[1]; c < bestVector[1] + 3; c++) {
+                System.out.print(String.format("%d ", matrix[r][c]));
             }
-            sb.append(System.lineSeparator());
+            System.out.println();
         }
-        System.out.println(sb.toString());
     }
 
     private static int findSum(int[] start, int[][] matrix) {
